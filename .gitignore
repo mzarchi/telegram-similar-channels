@@ -1,5 +1,7 @@
+__*
 *.session
 *.csv
 *.json
-transforms/credentials.py
 .idea
+.env
+.venv
