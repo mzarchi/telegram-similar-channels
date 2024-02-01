@@ -9,7 +9,9 @@ from telethon.errors.rpcerrorlist import RpcCallFailError
 from telethon import functions
 from bs4 import BeautifulSoup
 
-from .credentials import API_ID, API_HASH, SESSION_FILE_NAME
+import sys
+sys.path.append('./')
+from config import API_ID, API_HASH, SESSION_FILE_NAME
 
 async def safe_api_request(coroutine, comment):
     result = None
